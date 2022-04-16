@@ -119,3 +119,64 @@ font-size: 20px;
     margin: 10px;
     border-radius: 20px;
 }
+
+.content {
+    background: #ccc;
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.content .projects {
+    grid-row: 1 / span 2;
+    padding: 20px;
+}
+
+.content .projects h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content .projects .all-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.content .projects .all-projects .project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: solid 9px #292929;
+
+    display: grid;
+}
+
+.content .projects .all-projects .project p {
+    margin-top: 10px;
+}
+
+.content .projects .all-projects .project .actions {
+    justify-self: end;
+    align-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.content .projects .all-projects .project .actions button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.content .announcements {
+    background-color: green;
+}
+
+.content .trending {
+    background-color: blue;
+    grid-column: 2 / span 1;
+}
