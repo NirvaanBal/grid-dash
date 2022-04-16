@@ -29,9 +29,17 @@ body {
     font-size: 20px;
 }
 
+.sidebar ul li {
+    margin: 4px 0;
+}
+
 .header {
-    background: yellow;
     grid-column: 2 / span 2;
+}
+
+.header .user {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .content {
