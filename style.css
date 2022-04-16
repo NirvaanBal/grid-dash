@@ -10,3 +10,30 @@
 body {
     font-family: 'Akshar', sans-serif;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}
+
+.sidebar {
+    background: #292929;
+    color: #fff;
+    grid-row: 1/ span 2;
+}
+
+.header {
+    background: yellow;
+    grid-column: 2 / span 2;
+}
+
+.content {
+    background: rgb(236, 234, 234);
+
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+}
+
+.trending {
+    grid-column: 2;
+}
