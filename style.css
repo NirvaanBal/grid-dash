@@ -35,20 +35,87 @@ body {
 
 .header {
     grid-column: 2 / span 2;
+    padding: 20px;
 }
 
 .header .user {
     display: grid;
-    grid-template-columns: 1fr;
-}
-
-.content {
-    background: rgb(236, 234, 234);
-
-    display: grid;
     grid-template-columns: 6fr 2fr;
+    align-items: center;
+    grid-gap: 10px;
 }
 
-.trending {
-    grid-column: 2;
+.header .user form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+}
+
+.header .user form button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header .user form input[type="search"] {
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.header .user .specific {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    grid-gap: 15px;
+    margin-left: 30px;
+}
+
+.header .user .specific button {
+    background: transparent;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.header .user .specific .user-img {
+    font-size: 30px;
+}
+
+.header .user .specific h4 {
+font-size: 20px;
+}
+
+.header .salute {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.header .salute .crendentials {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.header .salute .crendentials .user-img {
+    font-size: 60px;
+}
+
+.header .salute  .actions button {
+    display: inline-block;
+    background: #292929;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 20px;
 }
