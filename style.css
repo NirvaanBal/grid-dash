@@ -13,13 +13,20 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 2fr 8fr;
 }
 
 .sidebar {
     background: #292929;
     color: #fff;
-    grid-row: 1/ span 2;
+    padding: 20px;
+    grid-row: 1 / span 2;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
 .header {
