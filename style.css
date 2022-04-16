@@ -201,4 +201,33 @@ font-size: 20px;
 
 .content .trending {
     grid-column: 2 / span 1;
+    margin-right: 20px;
+}
+
+.content .trending h3 {
+    margin-top: 10px;
+}
+
+.content .trending > div {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px;
+    display: grid;
+    grid-gap: 15px;
+}
+
+.content .trending .user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.content .trending .user-image {
+    font-size: 25px;
+}
+
+.content .trending .info .user-name {
+    font-weight: bold;
+    margin-bottom: 3px;
 }
